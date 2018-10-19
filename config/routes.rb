@@ -7,6 +7,14 @@ devise_scope :user do
   get 'login', to: 'devise/sessions#new'
 end
 
+resources :posts do
+  collection do
+    get 'hobby'
+    get 'study'
+    get 'team'
+  end
+end
+
 devise_scope :user do
   get 'signup', to: 'devise/registrations#new'
 end
