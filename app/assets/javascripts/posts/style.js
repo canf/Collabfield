@@ -2,22 +2,15 @@
 $(document).on("turbolinks:load", function() {
     if ($(".single-post-card").length) {
         // set a solid background color style
-        if (mode == 1) {
-            $(".single-post-card").each(function() {
-                $(this).addClass("solid-color-mode");
-                $(this).css('background-color', randomColor());
-                        $(this).css('border-radius', '15px');
-
-            });
-        }
+    
         // set a border color style
-        else {
+        
             $(".single-post-card").each(function() {
                 $(this).addClass("border-color-mode");
                 $(this).css('border-radius', '35px');
                 $(this).css('border', '15px solid ' + randomColor());
             });
-        }   
+        
     }
 
 

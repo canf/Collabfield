@@ -6,6 +6,7 @@ html {
   font-size: 62.5%;
 }
 
+
 body {
   background: $backgroundColor;
   font-size: 14px;
@@ -31,4 +32,9 @@ a:hover, a:active, a:link, a:visited {
 
 .control-label {
   display: none;
+}
+
+.login-button, .sign-up-button {
+  background-color: $navbarColor;
+  color: white !important;
 }
