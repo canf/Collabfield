@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+document.addEventListener("turbolinks:load", function() {
     if ($(".single-post-card").length) {
         // set a solid background color style
         if (mode == 1) {
@@ -13,16 +13,16 @@ $(document).on('turbolinks:load', function() {
                 $(this).addClass("border-color-mode");
                 $(this).css('border', '5px solid ' + randomColor());
             });
-        }	
+        }   
     }
 
 
     $('#feed').on( 'mouseenter', '.single-post-list', function() {
-        $(this).css('border-color', randomColor());	
+        $(this).css('border-color', randomColor()); 
     });
 
     $('#feed').on( 'mouseleave', '.single-post-list', function() {
-        $(this).css('border-color', 'rgba(0, 0 , 0, 0.05)');	
+        $(this).css('border-color', 'rgba(0, 0 , 0, 0.05)');    
     });
 
 });
