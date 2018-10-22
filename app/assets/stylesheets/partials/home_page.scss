@@ -1,9 +1,39 @@
+.page-name {
+  margin: 15px 0px 15px 0px;
+  text-align: center;
+  background-color: white !important;
+  font-weight: bold;
+  a {
+    color: black;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+
+
 #main-content {
   background: white;
   min-height: 800px;
   margin: 0;
   padding: 10px 0 0 0;
 }
+
+
+.login-button-index {
+  padding: 5px 10px;
+  border-radius: 10px;
+  &:hover, &:active, &:visited, &:link {
+    color: white;
+  }
+}
+
+.login-button, .login-button-index, .sign-up-button  {
+  background-color: $navbarColor;
+  color: white !important;
+}
+
 
 #side-menu {
   padding: 0;
